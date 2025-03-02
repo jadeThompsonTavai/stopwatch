@@ -18,14 +18,14 @@ function App() {
   }, [running]);
 
   return (
-    <div className="box w-screen h-screen bg-red-200" >
+    <div className="box w-screen h-screen" >
       <div className=" absolute inset-x-0 top-50 bg-white flex col display: inline-block mx-auto justify-center max-w-sm  gap-x-4 rounded-xl p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-      <h1 className="flex items-center justify-center w-full gap-6 text-2xl font-normal text-gray-900 mt-1 text-center w-full">Stopwatch</h1>
+      <h1 className="flex items-center justify-center w-full gap-6 text-2xl font-semibold text-gray-900 mt-1 text-center w-full">Stopwatch</h1>
       <div className="flex items-center justify-center w-full gap-6 pt-4">
         <div><h3 className="stopwatch-element minutes font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20">
-          {("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</h3></div>
+          {("0" + Math.floor((time / 60000) % 60)).slice(-2)}: </h3></div>
         <span><h3 className="stopwatch-element seconds font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20">
-          {("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</h3></span>
+          {("0" + Math.floor((time / 1000) % 60)).slice(-2)}: </h3></span>
         <span><h3 className="stopwatch-element milliseconds font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20">
           {("0" + ((time / 10) % 100)).slice(-2)}</h3></span>
       </div>
